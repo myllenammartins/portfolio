@@ -75,14 +75,14 @@ body {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
-    width: 50%; /* Define a largura para 50% do contêiner pai */
+    width: 50%;
     padding-right: 2px;
 }
 
 #welcome-text h1 {
     font-size: 5rem;
     margin: 0;
-    font-weight: 900
+    font-weight: 900;
 }
 
 #welcome-text h3 {
@@ -93,52 +93,69 @@ body {
 #welcome-section img {
     width: 290px;
     height: auto;
-    display: inline-block; /* Faz com que a imagem se comporte como um elemento em linha */
-    vertical-align: middle; /* Alinha verticalmente no centro */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #welcome-section h1 {
     font-size: 3rem;
-    display: inline-block; /* Faz com que o título se comporte como um elemento em linha */
+    display: inline-block;
 }
 
 /* Estilo da seção de projetos */
 #projects {
-    background-color: #8cacc2;
     padding: 50px 0;
+    background: linear-gradient(to bottom, #c4d6e2, #758bc9);
 }
 
-.project-tile {
-    background-color: #fff;
+.title {
+    margin-top: 40px;
     padding: 20px;
     margin: 20px;
     margin-left: 60px;
     margin-right: 60px;
+    font-size: 2.4rem;
+}
+
+.project-tile {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.74);
     transition: transform 0.3s ease;
 }
 
 .project-tile:hover {
-    transform: translateX(-8px);
+    box-shadow: 0 6px 8px rgba(34, 34, 34, 0.952);
 }
 
 .project-tile h2 {
     font-size: 1.5rem;
     color: #007ACC;
+    margin-bottom: 30px;
 }
 
 .project-tile p {
+    padding: 10px;
     margin-top: 10px;
 }
 
-.project-tile a {
-    text-decoration: none;
-    color: #FFA500;
-    display: block;
-    margin-top: 10px;
+.project-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
+/* Responsividade para os cartões de projetos */
+@media (max-width: 768px) {
+    .project-tile {
+        flex: 0 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
 
 #profile-link {
     display: block;
@@ -157,8 +174,8 @@ body {
 
 /* Estilo da seção de contato */
 #contact {
-    background-color: #525050;
-    color: #fff; 
+    background: linear-gradient(to bottom, #758bc9, #eef0f1);
+    color: #333; 
     padding: 50px 0;
     text-align: center;
 }
@@ -189,4 +206,28 @@ body {
 
 #contact a:hover {
     color: #00568B;
+}
+
+/* Estilos da seção de tecnologias */
+.section-tech {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #eef0f1, #33333331);
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons {
+    width: 40px;
+    height: auto;
 }
