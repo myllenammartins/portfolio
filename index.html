@@ -6,7 +6,6 @@
     <title>Portfólio Myllena</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
 </head>
 <body>
@@ -14,7 +13,8 @@
     <nav id="navbar">
         <ul>
             <li><a href="#welcome-section">Início</a></li>
-            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#about-section">Sobre</a></li>
+            <li><a href="#projects-section">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
     </nav>
@@ -23,73 +23,207 @@
     <section id="welcome-section">
         <div id="welcome-text" class="floating-text">
             <h3>Olá, sou a</h3>
-            <h1>Myllena M. Martins</h1>
+            <h1>Myllena Miranda</h1>
             <p>Desenvolvedora web | Análise e Desenvolvimento de Sistemas</p>
+            <div id="contact-welcome">
+              <a href="https://drive.google.com/file/d/1RhFeQGXP3970QgJ5SBbq8crI3zJBf9nN/view?usp=sharing" target="_blank">
+                <button>Visualizar CV</button>
+              </a>
+            </div>
+            </div>
         </div>
-            <img src="avatar3.jpg" alt="Meu avatar" class="avatar">
+
+            <img src="Myavatar.png" alt="Meu avatar" class="avatar"> 
+            
+    </section>
+
+    <!-- Seção de sobre mim -->
+    <section id="about-section">
+      <div class="about-title-container">
+        <h2 class="about-title">Sobre mim</h2>
+      </div>
+
+      <div class="card-about">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+        </div>
+
+        <div class="content-text">
+          <p> Olá, meu nome é Myllena, e sou uma entusiasta da ciência e tecnologia. Ao longo da minha trajetória, sempre estive em contato com a tecnologia, 
+            mas foi durante minha primeira graduação em 
+            biologia que percebi o quanto esse campo me atraía como uma possível carreira.
+          </p>
+
+          <p> A partir desse insight, decidi realizar uma transição de carreira, e o bootcamp da Laboratoria desempenhou um papel fundamental nessa transformação. 
+            Durante o programa, tive a oportunidade de adquirir habilidades técnicas construindo projetos utilizando, JavaScript, HTML, CSS, Jest, 
+            Trello, VSCode, noções de bancos de dados, Figma, Git, GitHub, Angular e Node.js.
+          </p>
+
+          <p> Tenho uma paixão pelo aprendizado contínuo e estou sempre em busca de novos conhecimentos. Como resultado, venho trabalhando em diversos 
+            projetos para aperfeiçoar minhas habilidades e continuar crescendo profissionalmente.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Seção de projetos -->
-    <section id="projects">
+    <section id="projects-section">
 
         <section id="frontend-projects">
-            <h2 class="title">Projetos Frontend</h2>
+            <h2 class="title-project">Projetos Frontend</h2>
 
-            <div class="project-tile">
-                <h2>burger-queen-client</h2>
-                <p>Criação de uma interface e integração com uma API.</p>
-                <a href="https://github.com/myllenammartins/burger-queen-client" target="_blank">Link para o projeto</a>
-            </div>
-
-            <div class="project-tile">
-                <h2>social-network</h2>
-                <p>O PetChat é uma ferramenta de chat desenvolvida para conectar tutores de animais de estimação, 
-                    permitindo que eles compartilhem dúvidas e experiências relacionadas aos seus pets. A plataforma 
-                    oferece uma comunidade online onde os usuários podem postar comentários, receber curtidas e 
-                    respostas de outros membros.</p>
-                <a href="https://github.com/myllenammartins/SAP010-social-network" target="_blank">Link para o projeto</a>
-            </div>
-
-            <div class="project-tile">
-                <h2>data-lovers</h2>
-                <p>O objetivo desse projeto foi construir uma página web que permita visualizar, filtrar, 
-                    ordenar e realizar cálculos agregados do conjunto de dados da série Breaking Bad. Além disso, 
-                    atender as necessidades do usuário, fornecendo informações relevantes e uma interface intuitiva.</p>
-                <a href="https://github.com/myllenammartins/SAP010-data-lovers" target="_blank">Link para o projeto</a>
-            </div>
-
-            <div class="project-tile">
-                <h2>card-validation</h2>
-                <p>O projeto teve como objetivo simular um ambiente de validação de cartão de crédito, 
-                    utilizando o Algoritmo de Luhn, onde o usuário digita os dígitos do cartão e, ao clicar 
-                    no botão validar, informa se o cartão é válido ou não.</p>
-                <a href="https://github.com/myllenammartins/SAP010-card-validation" target="_blank">Link para o projeto</a>
-            </div>
+            <section class="cards">
+                <div class="project-card">
+                    <div class="image"></div>
+                     <div class="content">
+                         <p class="title-p">
+                            burger-queen-client
+                         </p>
+                   
+                       <p class="desc">
+                        Criação de uma interface e integração com uma API. 
+                       </p>
+                   
+                       <a class="action" href="https://github.com/myllenammartins/burger-queen-client" target="_blank">
+                         Link para repositório
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
+    
+                   <div class="project-card">
+                    <div class="image"></div>
+                     <div class="content">
+                         <p class="title-p">
+                            social-network
+                         </p>
+                   
+                       <p class="desc">
+                        O PetChat é uma ferramenta de chat desenvolvida para conectar tutores de animais de estimação, 
+                        permitindo que eles compartilhem dúvidas e experiências relacionadas aos seus pets. A plataforma 
+                        oferece uma comunidade online onde os usuários podem postar comentários, receber curtidas e 
+                        respostas de outros membros. 
+                       </p>
+                   
+                       <a class="action" href="https://github.com/myllenammartins/SAP010-social-network" target="_blank">
+                         Link para repositório
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
+    
+                   <div class="project-card">
+                    <div class="image"></div>
+                     <div class="content">
+                         <p class="title-p">
+                            data-lovers
+                         </p>
+                   
+                       <p class="desc">
+                        O objetivo desse projeto foi construir uma página web que permita visualizar, filtrar, 
+                        ordenar e realizar cálculos agregados do conjunto de dados da série Breaking Bad. Além disso, 
+                        atender as necessidades do usuário, fornecendo informações relevantes e uma interface intuitiva. 
+                       </p>
+                   
+                       <a class="action" href="https://github.com/myllenammartins/SAP010-data-lovers" target="_blank">
+                         Link para repositório
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
+    
+                   <div class="project-card">
+                    <div class="image"></div>
+                     <div class="content">
+                         <p class="title-p">
+                            card-validation
+                         </p>
+                   
+                       <p class="desc">
+                        O projeto teve como objetivo simular um ambiente de validação de cartão de crédito, 
+                        utilizando o Algoritmo de Luhn, onde o usuário digita os dígitos do cartão e, ao clicar 
+                        no botão validar, informa se o cartão é válido ou não. 
+                       </p>
+                   
+                       <a class="action" href="https://github.com/myllenammartins/SAP010-card-validation" target="_blank">
+                         Link para repositório
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
+            </section>
 
         </section>
 
         <section id="backend-projects">
 
-            <h2 class="title">Projetos Backend</h2>
+            <h2 class="title-project">Projetos Backend</h2>
 
-            <div class="project-tile">
-                <h2>burger-queen-api</h2>
-                <p>Desenvolvimento de uma API, com node, que pode integrar a outra interface.</p>
-                <a href="https://github.com/myllenammartins/SAP010-burger-queen-api" target="_blank">Link para o projeto</a>
-            </div>
+            <section class="cards">
+                <div class="project-card">
+                    <div class="image"></div>
+                     <div class="content">
+                         <p class="title-p">
+                            burger-queen-api
+                         </p>
+                   
+                       <p class="desc">
+                        Desenvolvimento de uma API, com node, que pode integrar a outra interface. 
+                       </p>
+                   
+                       <a class="action" href="https://github.com/myllenammartins/SAP010-burger-queen-api" target="_blank">
+                         Link para repositório
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
 
-            <div class="project-tile">
-                <h2>md-links</h2>
-                <p>A biblioteca possibilita a leitura de arquivos no formato Markdown, localizados na máquina do usuário, 
+                   <div class="project-card">
+                    <div class="image"></div>
+                     <div class="content">
+                         <p class="title-p">
+                            md-links
+                         </p>
+                   
+                       <p class="desc">
+                        A biblioteca possibilita a leitura de arquivos no formato Markdown, localizados na máquina do usuário, 
                     e análise da presença de links nesses documentos. Além de permitir não somente a identificação de links, 
-                    mas também a verificação de sua validade e a obtenção de estatísticas sobre cada um deles.</p>
-                <a href="https://github.com/myllenammartins/SAP010-md-links" target="_blank">Link para o projeto</a>
-            </div>
-        
+                    mas também a verificação de sua validade e a obtenção de estatísticas sobre cada um deles. 
+                       </p>
+                   
+                       <a class="action" href="https://github.com/myllenammartins/SAP010-md-links" target="_blank">
+                         Link para repositório
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
         </section>
-        
+    
     </section>
 
+    <!-- Seção de contato -->
     <section id="contact">
 
         <h2>Contato</h2>
@@ -100,9 +234,10 @@
         </ul>
     </section>
 
-    <section class="section-tech">
+    <!-- Seção de tecnologias -->
+    <section id="section-tech">
 
-        <h2 class="title"> Ferramentas que tive contato </h2>
+        <h2 class="title-tech"> Ferramentas que tive contato </h2>
 
         <section class="tech">
         
